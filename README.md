@@ -1,32 +1,32 @@
 # 🧠 NEO - Local Knowledge Assistant
 
-Privacy-first, tamamen lokal çalışan RAG (Retrieval-Augmented Generation) tabanlı geliştirici asistanı.
+A privacy-first, fully local RAG (Retrieval-Augmented Generation) powered developer assistant.
 
-## ✨ Özellikler
+## ✨ Features
 
-- **Hibrit Arama**: Keyword + Vector search ile yüksek doğruluk
-- **Lokal LLM**: Ollama + Qwen2.5 ile buluta veri göndermez
-- **Hızlı**: Kısa sorgularda anında yanıt (fan dostu)
-- **Türkçe Desteği**: Karakter normalizasyonu ve stemming
-- **Akıllı Özellikler**: Kod tekrarı tespiti, mülakat modu, proje özeti
+- **Hybrid Search**: High accuracy with Keyword + Vector search
+- **Local LLM**: Ollama + Qwen2.5, no data sent to the cloud
+- **Fast**: Instant response for short queries (fan-friendly)
+- **Turkish NLP Support**: Character normalization and stemming
+- **Smart Features**: Code duplication detection, interview mode, project summarization
 
-## 🚀 Kurulum
+## 🚀 Installation
 
 ```bash
-# 1. Sanal ortam oluştur
+# 1. Create virtual environment
 python -m venv venv
 source venv/Scripts/activate  # Windows: venv\Scripts\activate
 
-# 2. Bağımlılıkları kur
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Ollama'yı kur ve model çek
+# 3. Install Ollama and pull models
 ollama pull qwen2.5:3b
 ollama pull nomic-embed-text
 
-# 4. Demo verileri oluştur
+# 4. Create demo data
 python create_demo_data.py
 python indexer.py
 
-# 5. Çalıştır
+# 5. Run the app
 python neo_app.py

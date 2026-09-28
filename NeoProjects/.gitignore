@@ -1,0 +1,29 @@
+# Sanal Ortam
+venv/
+env/
+.venv/
+
+# Veritabanı (Kişisel veriler)
+neo_db/
+Mercedes_Demo_Projesi/
+
+# Python çöp dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# İşletim Sistemi dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log dosyaları
+*.log
